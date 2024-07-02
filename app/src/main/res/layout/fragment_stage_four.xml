@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.register.personaldata.StageFourFragment">
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/include_starting_header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/include">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="YOUR PERSONAL DATA"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/f_name"
+                    style="@style/et_style"
+                    android:hint="FIRST NAME" />
+
+                <EditText
+                    android:id="@+id/last_name"
+                    style="@style/et_style"
+                    android:hint="LAST NAME" />
+
+                <EditText
+                    android:id="@+id/date_of_birth"
+                    style="@style/et_style"
+                    android:hint="DATE OF BIRTH" />
+
+                <EditText
+                    android:id="@+id/country"
+                    style="@style/et_style"
+                    android:hint="COUNTRY" />
+
+                <EditText
+                    android:id="@+id/governorate"
+                    style="@style/et_style"
+                    android:hint="GOVERNORATE" />
+
+                <EditText
+                    android:id="@+id/city"
+                    style="@style/et_style"
+                    android:hint="CITY" />
+
+                <EditText
+                    android:id="@+id/weight"
+                    style="@style/et_style"
+                    android:hint="WEIGHT"
+                    android:inputType="number" />
+
+
+                <EditText
+                    android:id="@+id/height"
+                    style="@style/et_style"
+                    android:hint="HEIGHT"
+                    android:inputType="number" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button"
+                    style="@style/button_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="64dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="64dp"
+                    android:layout_marginBottom="32dp"
+                    android:text="CONTINUE"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
